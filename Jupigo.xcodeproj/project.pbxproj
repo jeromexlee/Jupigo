@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AF4F0141E4FED4700B4582D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF4F0131E4FED4700B4582D /* AppDelegate.swift */; };
+		2AF4F0161E4FED4700B4582D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF4F0151E4FED4700B4582D /* MasterViewController.swift */; };
+		2AF4F0181E4FED4700B4582D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF4F0171E4FED4700B4582D /* DetailViewController.swift */; };
+		2AF4F01B1E4FED4700B4582D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF4F0191E4FED4700B4582D /* Main.storyboard */; };
+		2AF4F01D1E4FED4700B4582D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF4F01C1E4FED4700B4582D /* Assets.xcassets */; };
+		2AF4F0201E4FED4700B4582D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF4F01E1E4FED4700B4582D /* LaunchScreen.storyboard */; };
+		2AF4F02B1E4FED4700B4582D /* JupigoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF4F02A1E4FED4700B4582D /* JupigoTests.swift */; };
+		2AF4F0361E4FED4700B4582D /* JupigoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF4F0351E4FED4700B4582D /* JupigoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AF4F0271E4FED4700B4582D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AF4F0081E4FED4700B4582D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AF4F00F1E4FED4700B4582D;
+			remoteInfo = Jupigo;
+		};
+		2AF4F0321E4FED4700B4582D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AF4F0081E4FED4700B4582D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AF4F00F1E4FED4700B4582D;
+			remoteInfo = Jupigo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AF4F0101E4FED4700B4582D /* Jupigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jupigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF4F0131E4FED4700B4582D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2AF4F0151E4FED4700B4582D /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		2AF4F0171E4FED4700B4582D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2AF4F01A1E4FED4700B4582D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AF4F01C1E4FED4700B4582D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AF4F01F1E4FED4700B4582D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2AF4F0211E4FED4700B4582D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AF4F0261E4FED4700B4582D /* JupigoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JupigoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF4F02A1E4FED4700B4582D /* JupigoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JupigoTests.swift; sourceTree = "<group>"; };
+		2AF4F02C1E4FED4700B4582D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AF4F0311E4FED4700B4582D /* JupigoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JupigoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF4F0351E4FED4700B4582D /* JupigoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JupigoUITests.swift; sourceTree = "<group>"; };
+		2AF4F0371E4FED4700B4582D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AF4F00D1E4FED4700B4582D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF4F0231E4FED4700B4582D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF4F02E1E4FED4700B4582D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AF4F0071E4FED4700B4582D = {
+			isa = PBXGroup;
+			children = (
+				2AF4F0121E4FED4700B4582D /* Jupigo */,
+				2AF4F0291E4FED4700B4582D /* JupigoTests */,
+				2AF4F0341E4FED4700B4582D /* JupigoUITests */,
+				2AF4F0111E4FED4700B4582D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AF4F0111E4FED4700B4582D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AF4F0101E4FED4700B4582D /* Jupigo.app */,
+				2AF4F0261E4FED4700B4582D /* JupigoTests.xctest */,
+				2AF4F0311E4FED4700B4582D /* JupigoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AF4F0121E4FED4700B4582D /* Jupigo */ = {
+			isa = PBXGroup;
+			children = (
+				2AF4F0131E4FED4700B4582D /* AppDelegate.swift */,
+				2AF4F0151E4FED4700B4582D /* MasterViewController.swift */,
+				2AF4F0171E4FED4700B4582D /* DetailViewController.swift */,
+				2AF4F0191E4FED4700B4582D /* Main.storyboard */,
+				2AF4F01C1E4FED4700B4582D /* Assets.xcassets */,
+				2AF4F01E1E4FED4700B4582D /* LaunchScreen.storyboard */,
+				2AF4F0211E4FED4700B4582D /* Info.plist */,
+			);
+			path = Jupigo;
+			sourceTree = "<group>";
+		};
+		2AF4F0291E4FED4700B4582D /* JupigoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AF4F02A1E4FED4700B4582D /* JupigoTests.swift */,
+				2AF4F02C1E4FED4700B4582D /* Info.plist */,
+			);
+			path = JupigoTests;
+			sourceTree = "<group>";
+		};
+		2AF4F0341E4FED4700B4582D /* JupigoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AF4F0351E4FED4700B4582D /* JupigoUITests.swift */,
+				2AF4F0371E4FED4700B4582D /* Info.plist */,
+			);
+			path = JupigoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AF4F00F1E4FED4700B4582D /* Jupigo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AF4F03A1E4FED4700B4582D /* Build configuration list for PBXNativeTarget "Jupigo" */;
+			buildPhases = (
+				2AF4F00C1E4FED4700B4582D /* Sources */,
+				2AF4F00D1E4FED4700B4582D /* Frameworks */,
+				2AF4F00E1E4FED4700B4582D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jupigo;
+			productName = Jupigo;
+			productReference = 2AF4F0101E4FED4700B4582D /* Jupigo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AF4F0251E4FED4700B4582D /* JupigoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AF4F03D1E4FED4700B4582D /* Build configuration list for PBXNativeTarget "JupigoTests" */;
+			buildPhases = (
+				2AF4F0221E4FED4700B4582D /* Sources */,
+				2AF4F0231E4FED4700B4582D /* Frameworks */,
+				2AF4F0241E4FED4700B4582D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AF4F0281E4FED4700B4582D /* PBXTargetDependency */,
+			);
+			name = JupigoTests;
+			productName = JupigoTests;
+			productReference = 2AF4F0261E4FED4700B4582D /* JupigoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AF4F0301E4FED4700B4582D /* JupigoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AF4F0401E4FED4700B4582D /* Build configuration list for PBXNativeTarget "JupigoUITests" */;
+			buildPhases = (
+				2AF4F02D1E4FED4700B4582D /* Sources */,
+				2AF4F02E1E4FED4700B4582D /* Frameworks */,
+				2AF4F02F1E4FED4700B4582D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AF4F0331E4FED4700B4582D /* PBXTargetDependency */,
+			);
+			name = JupigoUITests;
+			productName = JupigoUITests;
+			productReference = 2AF4F0311E4FED4700B4582D /* JupigoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AF4F0081E4FED4700B4582D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "XINHAO LI";
+				TargetAttributes = {
+					2AF4F00F1E4FED4700B4582D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					2AF4F0251E4FED4700B4582D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2AF4F00F1E4FED4700B4582D;
+					};
+					2AF4F0301E4FED4700B4582D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2AF4F00F1E4FED4700B4582D;
+					};
+				};
+			};
+			buildConfigurationList = 2AF4F00B1E4FED4700B4582D /* Build configuration list for PBXProject "Jupigo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AF4F0071E4FED4700B4582D;
+			productRefGroup = 2AF4F0111E4FED4700B4582D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AF4F00F1E4FED4700B4582D /* Jupigo */,
+				2AF4F0251E4FED4700B4582D /* JupigoTests */,
+				2AF4F0301E4FED4700B4582D /* JupigoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AF4F00E1E4FED4700B4582D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF4F0201E4FED4700B4582D /* LaunchScreen.storyboard in Resources */,
+				2AF4F01D1E4FED4700B4582D /* Assets.xcassets in Resources */,
+				2AF4F01B1E4FED4700B4582D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF4F0241E4FED4700B4582D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF4F02F1E4FED4700B4582D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AF4F00C1E4FED4700B4582D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF4F0181E4FED4700B4582D /* DetailViewController.swift in Sources */,
+				2AF4F0161E4FED4700B4582D /* MasterViewController.swift in Sources */,
+				2AF4F0141E4FED4700B4582D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF4F0221E4FED4700B4582D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF4F02B1E4FED4700B4582D /* JupigoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF4F02D1E4FED4700B4582D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF4F0361E4FED4700B4582D /* JupigoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AF4F0281E4FED4700B4582D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AF4F00F1E4FED4700B4582D /* Jupigo */;
+			targetProxy = 2AF4F0271E4FED4700B4582D /* PBXContainerItemProxy */;
+		};
+		2AF4F0331E4FED4700B4582D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AF4F00F1E4FED4700B4582D /* Jupigo */;
+			targetProxy = 2AF4F0321E4FED4700B4582D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AF4F0191E4FED4700B4582D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AF4F01A1E4FED4700B4582D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2AF4F01E1E4FED4700B4582D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AF4F01F1E4FED4700B4582D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AF4F0381E4FED4700B4582D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AF4F0391E4FED4700B4582D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AF4F03B1E4FED4700B4582D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jupigo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jerome.Jupigo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2AF4F03C1E4FED4700B4582D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jupigo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jerome.Jupigo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2AF4F03E1E4FED4700B4582D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JupigoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jerome.JupigoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jupigo.app/Jupigo";
+			};
+			name = Debug;
+		};
+		2AF4F03F1E4FED4700B4582D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JupigoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jerome.JupigoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jupigo.app/Jupigo";
+			};
+			name = Release;
+		};
+		2AF4F0411E4FED4700B4582D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JupigoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jerome.JupigoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Jupigo;
+			};
+			name = Debug;
+		};
+		2AF4F0421E4FED4700B4582D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JupigoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jerome.JupigoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Jupigo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AF4F00B1E4FED4700B4582D /* Build configuration list for PBXProject "Jupigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF4F0381E4FED4700B4582D /* Debug */,
+				2AF4F0391E4FED4700B4582D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AF4F03A1E4FED4700B4582D /* Build configuration list for PBXNativeTarget "Jupigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF4F03B1E4FED4700B4582D /* Debug */,
+				2AF4F03C1E4FED4700B4582D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2AF4F03D1E4FED4700B4582D /* Build configuration list for PBXNativeTarget "JupigoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF4F03E1E4FED4700B4582D /* Debug */,
+				2AF4F03F1E4FED4700B4582D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2AF4F0401E4FED4700B4582D /* Build configuration list for PBXNativeTarget "JupigoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF4F0411E4FED4700B4582D /* Debug */,
+				2AF4F0421E4FED4700B4582D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AF4F0081E4FED4700B4582D /* Project object */;
+}
