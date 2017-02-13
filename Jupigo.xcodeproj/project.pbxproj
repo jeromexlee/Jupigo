@@ -503,6 +503,7 @@
 				2A6DE4AC1E512DD700A01963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A6DE4AD1E512DD700A01963 /* Build configuration list for PBXNativeTarget "JupigoTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +512,7 @@
 				2A6DE4AF1E512DD700A01963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A6DE4B01E512DD700A01963 /* Build configuration list for PBXNativeTarget "JupigoUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +521,7 @@
 				2A6DE4B21E512DD700A01963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
