@@ -14,6 +14,8 @@
 		2A6DE4901E512DD700A01963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DE48E1E512DD700A01963 /* LaunchScreen.storyboard */; };
 		2A6DE49B1E512DD700A01963 /* JupigoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DE49A1E512DD700A01963 /* JupigoTests.swift */; };
 		2A6DE4A61E512DD700A01963 /* JupigoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DE4A51E512DD700A01963 /* JupigoUITests.swift */; };
+		2AB4AED31E5178D20068AB98 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4AED21E5178D20068AB98 /* TableViewController.swift */; };
+		2AB4AED51E5179880068AB98 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4AED41E5179880068AB98 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		2A6DE4A11E512DD700A01963 /* JupigoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JupigoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6DE4A51E512DD700A01963 /* JupigoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JupigoUITests.swift; sourceTree = "<group>"; };
 		2A6DE4A71E512DD700A01963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AB4AED21E5178D20068AB98 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2AB4AED41E5179880068AB98 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				2A6DE4851E512DD700A01963 /* AppDelegate.swift */,
 				2A6DE4871E512DD700A01963 /* ViewController.swift */,
+				2AB4AED21E5178D20068AB98 /* TableViewController.swift */,
+				2AB4AED41E5179880068AB98 /* DetailViewController.swift */,
 				2A6DE4891E512DD700A01963 /* Main.storyboard */,
 				2A6DE48C1E512DD700A01963 /* Assets.xcassets */,
 				2A6DE48E1E512DD700A01963 /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A6DE4881E512DD700A01963 /* ViewController.swift in Sources */,
+				2AB4AED31E5178D20068AB98 /* TableViewController.swift in Sources */,
 				2A6DE4861E512DD700A01963 /* AppDelegate.swift in Sources */,
+				2AB4AED51E5179880068AB98 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

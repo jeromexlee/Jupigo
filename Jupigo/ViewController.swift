@@ -51,6 +51,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     self.view.endEditing(false)
   }
   
+  @IBAction func postNow(_ sender: Any) {
+    
+  }
 
 }
 
