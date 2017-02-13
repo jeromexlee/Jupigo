@@ -7,11 +7,7 @@ Create a simple iOS application based on given requirements.
 
 ###Prototype:
 
-<<<<<<< HEAD
-https://marvelapp.com/project/1719535/
-=======
 https://marvelapp.com/30a2hgb/
->>>>>>> 7eafc6bac5875b0907979a43e432a68fe8ad85bb
 
 
 ###Requirements:  
