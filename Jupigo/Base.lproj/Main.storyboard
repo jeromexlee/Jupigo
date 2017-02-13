@@ -67,35 +67,6 @@
             </objects>
             <point key="canvasLocation" x="1076" y="-187.55622188905548"/>
         </scene>
-        <!--Marketplace-->
-        <scene sceneID="3BZ-XP-Jdn">
-            <objects>
-                <tableViewController id="QPQ-EC-xT5" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="rUv-oM-Hzm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fPO-UZ-Kim">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fPO-UZ-Kim" id="cly-Vj-C6i">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="QPQ-EC-xT5" id="kbF-eM-VB6"/>
-                            <outlet property="delegate" destination="QPQ-EC-xT5" id="gTu-AM-TFc"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Marketplace" id="miB-rD-2S6"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="awn-a9-eqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1076" y="516"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wjc-i9-DUR">
             <objects>
@@ -108,7 +79,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="QcZ-QH-el6"/>
-                        <segue destination="QPQ-EC-xT5" kind="relationship" relationship="viewControllers" id="zlG-Yk-iOZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXN-tv-y1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
