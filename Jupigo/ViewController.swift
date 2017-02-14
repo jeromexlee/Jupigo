@@ -25,24 +25,21 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     picker.delegate = self
     picker.dataSource = self
     
-    
+    // Init the color text field
     colorText.delegate = self
     colorText.text = ""
     colorText.borderStyle = .line
     colorText.layer.borderWidth = 1
     colorText.layer.borderColor = myColor.cgColor
-    // binding textfield to picker
+    
+    // Binding textfield to picker
     colorText.inputView = picker
-    // set psot button
+    
+    // Init psot button
     postButton.isEnabled = false
     
-    // set date 
+    // Init date format
     formatter.dateFormat = "MM/dd/yyyy hh:mm:ss"
-  }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
   
   func textFieldDidBeginEditing(_ textField: UITextField) {
