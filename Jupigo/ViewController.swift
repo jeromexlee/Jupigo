@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
   @IBOutlet weak var colorText: UITextField!
+  @IBOutlet weak var postButton: UIButton!
   
   let color = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"]
   let picker = UIPickerView()
@@ -20,12 +21,17 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     // Do any additional setup after loading the view, typically from a nib.
     picker.delegate = self
     picker.dataSource = self
-    colorText.text = "Select Color"
+    
+    
+    colorText.delegate = self
+    colorText.text = ""
     colorText.borderStyle = .line
-    colorText.layer.borderWidth = 2
+    colorText.layer.borderWidth = 1
     colorText.layer.borderColor = myColor.cgColor
     // binding textfield to picker
     colorText.inputView = picker
+    // set psot button
+    postButton.isEnabled = false
   }
   
   override func didReceiveMemoryWarning() {
@@ -33,12 +39,15 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     // Dispose of any resources that can be recreated.
   }
   
+  func textFieldDidBeginEditing(_ textField: UITextField) {
+    postButton.isEnabled = true
+  }
 
-  public func numberOfComponents(in pickerView: UIPickerView) -> Int {
+  func numberOfComponents(in pickerView: UIPickerView) -> Int {
     return 1
   }
 
-  public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+  func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
     return color.count
   }
   
@@ -61,7 +70,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     // Save the data to coredata
     (UIApplication.shared.delegate as! AppDelegate).saveContext()
-    navigationController!.popViewController(animated: true)
   }
 
 }
