@@ -82,11 +82,11 @@ class TableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    performSegue(withIdentifier: "pass", sender: tasks[indexPath.row].color)
+    performSegue(withIdentifier: "pass", sender: tasks[indexPath.row])
   }
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let guest = segue.destination as! DetailViewController
-    guest.color = sender as! String
+    guest.task = sender as! Task
   }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

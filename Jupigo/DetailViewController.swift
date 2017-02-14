@@ -10,11 +10,14 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-  @IBOutlet weak var colorText: UILabel!
-  var color = "default color"
+    @IBOutlet weak var colorText: UILabel!
+    @IBOutlet weak var dateTime: UILabel!
+    var task : Task? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
-        colorText.text = color
+        
+        colorText.text = task?.color
+        dateTime.text = task?.time
         // Do any additional setup after loading the view.
     }
 

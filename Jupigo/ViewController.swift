@@ -16,6 +16,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   let color = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"]
   let picker = UIPickerView()
   let myColor : UIColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1.0)
+  let date = Date()
+  let formatter = DateFormatter()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -32,6 +35,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     colorText.inputView = picker
     // set psot button
     postButton.isEnabled = false
+    
+    // set date 
+    formatter.dateFormat = "MM/dd/yyyy hh:mm:ss"
   }
   
   override func didReceiveMemoryWarning() {
@@ -66,6 +72,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     let task = Task(context: context)
     
     task.color = colorText.text!
+    task.time = formatter.string(from: date)
     
     
     // Save the data to coredata
