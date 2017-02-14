@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    var tasks : [Task] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +19,13 @@ class TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        // get the data from core data
+        getData()
+      
+        // reload the table view
+        tableView.reloadData()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -27,16 +33,61 @@ class TableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
 
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return 0
+//    }
+  
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return tasks.count
     }
-
+  
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        let task = tasks[indexPath.row]
+        cell.textLabel?.text = task.color!
+        return cell
+    }
+  
+    func getData() {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+        do {
+          tasks = try context.fetch(Task.fetchRequest())
+        } catch {
+          print("Fetching Failed")
+        }
+    }
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    if editingStyle == .delete {
+      let task = tasks[indexPath.row]
+      context.delete(task)
+      (UIApplication.shared.delegate as! AppDelegate).saveContext()
+      
+      do {
+        tasks = try context.fetch(Task.fetchRequest())
+      } catch {
+        print("Fetching Failed")
+      }
+      
+    }
+    tableView.reloadData()
+  }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    performSegue(withIdentifier: "pass", sender: tasks[indexPath.row].color)
+  }
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let guest = segue.destination as! DetailViewController
+    guest.test = sender as! String
+  }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

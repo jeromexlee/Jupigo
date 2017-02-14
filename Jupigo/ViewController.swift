@@ -52,7 +52,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   }
   
   @IBAction func postNow(_ sender: Any) {
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
+    let task = Task(context: context)
+    
+    task.color = colorText.text!
+    
+    
+    // Save the data to coredata
+    (UIApplication.shared.delegate as! AppDelegate).saveContext()
+    navigationController!.popViewController(animated: true)
   }
 
 }

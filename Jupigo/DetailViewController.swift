@@ -10,9 +10,11 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+  @IBOutlet weak var colorText: UILabel!
+  var test = "testing"
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        colorText.text = test
         // Do any additional setup after loading the view.
     }
 
