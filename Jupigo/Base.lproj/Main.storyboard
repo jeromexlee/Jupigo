@@ -158,7 +158,7 @@
         <scene sceneID="C2w-yO-hDN">
             <objects>
                 <navigationController id="acP-bN-CuI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Marketplace" id="Dw9-74-wpR"/>
+                    <tabBarItem key="tabBarItem" title="Marketplace" image="list-fat-7.png" id="Dw9-74-wpR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0nf-gd-Tsn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -175,7 +175,7 @@
         <scene sceneID="VOW-DU-cXR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vij-2Q-FuI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="QW2-FI-hmW"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home-7.png" id="QW2-FI-hmW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZMt-Ms-pXb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -191,7 +191,11 @@
             <point key="canvasLocation" x="1076" y="-187.55622188905548"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home-7.png" width="30" height="30"/>
+        <image name="list-fat-7.png" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fnH-D8-WVK"/>
+        <segue reference="Do7-TB-46u"/>
     </inferredMetricsTieBreakers>
 </document>

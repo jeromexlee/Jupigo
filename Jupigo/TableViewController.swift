@@ -86,7 +86,7 @@ class TableViewController: UITableViewController {
   }
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let guest = segue.destination as! DetailViewController
-    guest.test = sender as! String
+    guest.color = sender as! String
   }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

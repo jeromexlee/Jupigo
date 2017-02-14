@@ -17,6 +17,8 @@
 		2AB4AED31E5178D20068AB98 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4AED21E5178D20068AB98 /* TableViewController.swift */; };
 		2AB4AED51E5179880068AB98 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4AED41E5179880068AB98 /* DetailViewController.swift */; };
 		2AB4AF201E529CF40068AB98 /* Jupigo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4AF1E1E529CF40068AB98 /* Jupigo.xcdatamodeld */; };
+		2AB4AF311E52D4CF0068AB98 /* list-fat-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB4AF2F1E52D4CF0068AB98 /* list-fat-7.png */; };
+		2AB4AF321E52D4CF0068AB98 /* home-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB4AF301E52D4CF0068AB98 /* home-7.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		2AB4AED21E5178D20068AB98 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2AB4AED41E5179880068AB98 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2AB4AF1F1E529CF40068AB98 /* Jupigo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jupigo.xcdatamodel; sourceTree = "<group>"; };
+		2AB4AF2F1E52D4CF0068AB98 /* list-fat-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list-fat-7.png"; sourceTree = "<group>"; };
+		2AB4AF301E52D4CF0068AB98 /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 		2A6DE4841E512DD700A01963 /* Jupigo */ = {
 			isa = PBXGroup;
 			children = (
+				2AB4AF2F1E52D4CF0068AB98 /* list-fat-7.png */,
+				2AB4AF301E52D4CF0068AB98 /* home-7.png */,
 				2A6DE4851E512DD700A01963 /* AppDelegate.swift */,
 				2AB4AF1E1E529CF40068AB98 /* Jupigo.xcdatamodeld */,
 				2A6DE4871E512DD700A01963 /* ViewController.swift */,
@@ -242,7 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A6DE4901E512DD700A01963 /* LaunchScreen.storyboard in Resources */,
+				2AB4AF311E52D4CF0068AB98 /* list-fat-7.png in Resources */,
 				2A6DE48D1E512DD700A01963 /* Assets.xcassets in Resources */,
+				2AB4AF321E52D4CF0068AB98 /* home-7.png in Resources */,
 				2A6DE48B1E512DD700A01963 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
