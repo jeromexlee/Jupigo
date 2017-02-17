@@ -14,10 +14,11 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var dateTime: UILabel!
     var task : Task? = nil
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Init text field
-        colorText.text = task?.color
-        dateTime.text = task?.time
+      super.viewDidLoad()
+      // Init text field
+      colorText.text = task?.color
+      dateTime.text = task?.time
     }
+  
 
 }
