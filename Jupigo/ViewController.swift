@@ -16,7 +16,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   let color = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"]
   let picker = UIPickerView()
   let myColor : UIColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1.0)
-  let date = Date()
   let formatter = DateFormatter()
   let toolBar = UIToolbar()
   var index : Int = 0
@@ -79,7 +78,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   
   @IBAction func postNow(_ sender: Any) {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
+    let date = Date()
     let task = Task(context: context)
     
     task.color = colorText.text!
