@@ -14,6 +14,8 @@
 		2A6DE4901E512DD700A01963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DE48E1E512DD700A01963 /* LaunchScreen.storyboard */; };
 		2A6DE49B1E512DD700A01963 /* JupigoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DE49A1E512DD700A01963 /* JupigoTests.swift */; };
 		2A6DE4A61E512DD700A01963 /* JupigoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DE4A51E512DD700A01963 /* JupigoUITests.swift */; };
+		2A87BDCF1E57A7380095F543 /* TableViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A87BDCE1E57A7380095F543 /* TableViewControllerTableViewCell.swift */; };
+		2A87BDD11E57AA850095F543 /* shopping-cart-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A87BDD01E57AA850095F543 /* shopping-cart-7.png */; };
 		2AB4AED31E5178D20068AB98 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4AED21E5178D20068AB98 /* TableViewController.swift */; };
 		2AB4AED51E5179880068AB98 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4AED41E5179880068AB98 /* DetailViewController.swift */; };
 		2AB4AF201E529CF40068AB98 /* Jupigo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4AF1E1E529CF40068AB98 /* Jupigo.xcdatamodeld */; };
@@ -52,6 +54,8 @@
 		2A6DE4A11E512DD700A01963 /* JupigoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JupigoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6DE4A51E512DD700A01963 /* JupigoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JupigoUITests.swift; sourceTree = "<group>"; };
 		2A6DE4A71E512DD700A01963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A87BDCE1E57A7380095F543 /* TableViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		2A87BDD01E57AA850095F543 /* shopping-cart-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shopping-cart-7.png"; sourceTree = "<group>"; };
 		2AB4AED21E5178D20068AB98 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2AB4AED41E5179880068AB98 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2AB4AF1F1E529CF40068AB98 /* Jupigo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jupigo.xcdatamodel; sourceTree = "<group>"; };
@@ -109,10 +113,12 @@
 			children = (
 				2AB4AF2F1E52D4CF0068AB98 /* list-fat-7.png */,
 				2AB4AF301E52D4CF0068AB98 /* home-7.png */,
+				2A87BDD01E57AA850095F543 /* shopping-cart-7.png */,
 				2A6DE4851E512DD700A01963 /* AppDelegate.swift */,
 				2AB4AF1E1E529CF40068AB98 /* Jupigo.xcdatamodeld */,
 				2A6DE4871E512DD700A01963 /* ViewController.swift */,
 				2AB4AED21E5178D20068AB98 /* TableViewController.swift */,
+				2A87BDCE1E57A7380095F543 /* TableViewControllerTableViewCell.swift */,
 				2AB4AED41E5179880068AB98 /* DetailViewController.swift */,
 				2A6DE4891E512DD700A01963 /* Main.storyboard */,
 				2A6DE48C1E512DD700A01963 /* Assets.xcassets */,
@@ -250,6 +256,7 @@
 				2A6DE4901E512DD700A01963 /* LaunchScreen.storyboard in Resources */,
 				2AB4AF311E52D4CF0068AB98 /* list-fat-7.png in Resources */,
 				2A6DE48D1E512DD700A01963 /* Assets.xcassets in Resources */,
+				2A87BDD11E57AA850095F543 /* shopping-cart-7.png in Resources */,
 				2AB4AF321E52D4CF0068AB98 /* home-7.png in Resources */,
 				2A6DE48B1E512DD700A01963 /* Main.storyboard in Resources */,
 			);
@@ -279,6 +286,7 @@
 				2A6DE4881E512DD700A01963 /* ViewController.swift in Sources */,
 				2AB4AED31E5178D20068AB98 /* TableViewController.swift in Sources */,
 				2A6DE4861E512DD700A01963 /* AppDelegate.swift in Sources */,
+				2A87BDCF1E57A7380095F543 /* TableViewControllerTableViewCell.swift in Sources */,
 				2AB4AED51E5179880068AB98 /* DetailViewController.swift in Sources */,
 				2AB4AF201E529CF40068AB98 /* Jupigo.xcdatamodeld in Sources */,
 			);

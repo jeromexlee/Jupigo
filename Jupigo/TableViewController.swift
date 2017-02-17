@@ -27,9 +27,16 @@ class TableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = UITableViewCell()
+//    let cell = UITableViewCell()
+//    let task = tasks[indexPath.row]
+//    cell.textLabel?.text = task.color!
+//    return cell
     let task = tasks[indexPath.row]
-    cell.textLabel?.text = task.color!
+    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewControllerTableViewCell
+    cell.iconImage.image = UIImage(named: "shopping-cart-7.png")
+    
+    cell.color.text = task.color
+    cell.dateString.text = task.time
     return cell
   }
   
