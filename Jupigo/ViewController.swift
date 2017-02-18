@@ -29,7 +29,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     colorText.delegate = self
     colorText.text = ""
     colorText.borderStyle = .line
-    colorText.layer.borderWidth = 1
+    colorText.layer.borderWidth = 2
     colorText.layer.borderColor = myColor.cgColor
     
     // Binding textfield to picker
@@ -37,15 +37,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     // Init psot button
     postButton.isEnabled = false
-    
+    postButton.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.1)
     // Init date format
     formatter.dateFormat = "MM/dd/yyyy hh:mm:ss"
     
+    // Init tool bar for picker view
     toolBar.sizeToFit()
     let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
     let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
     toolBar.setItems([flexibleSpace, doneButton], animated: false)
-    
+    // Binding textfield to tool bar
     colorText.inputAccessoryView = toolBar
     
   }
